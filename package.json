@@ -1,0 +1,36 @@
+{
+  "name": "lighthouse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "testwww": "lighthouse --port=49435  --config-path=./desktop-config.js https://www.aijianzi.com --view",
+    "testlocalwww": "lighthouse --port=49435  --config-path=./desktop-config.js http://localhost --view",
+    "test135": "lighthouse --port=49435  --config-path=./desktop-config.js https://test135.aijianzi.com/ --view",
+    "test36": "lighthouse --port=49435  --config-path=./desktop-config.js https://test36.aijianzi.com/ --view",
+    "testaxx": "lighthouse --port=49435  --config-path=./desktop-config.js https://www.aixuexi.com/ --view",
+    "testcourse": "lighthouse --port=49435 --disable-storage-reset --config-path=./desktop-config.js https://school.aijianzi.com/course-center/student/courses --view",
+    "testlearn": "lighthouse --port=49435 --disable-storage-reset  --config-path=./desktop-config.js https://school.aijianzi.com/course-learn/#/video?lessonid=10293&chapterid=-1&courseid=914&p=1 --view",
+    "test": "npm run testwww & npm run testcourse & npm run testlearn",
+    "testsolution": "lighthouse --port=49435  --config-path=./desktop-config.js https://www.aijianzi.com/solution/ --view",
+    "login": "node test1.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rexyanglucky/lighthouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rexyanglucky/lighthouse/issues"
+  },
+  "homepage": "https://github.com/rexyanglucky/lighthouse#readme",
+  "devDependencies": {
+    "chrome-launcher": "^0.12.0",
+    "lighthouse": "^5.6.0"
+  },
+  "dependencies": {
+    "puppeteer": "^2.0.0"
+  }
+}
