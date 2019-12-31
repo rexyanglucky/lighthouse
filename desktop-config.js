@@ -15,13 +15,13 @@ const config = {
     disableStorageReset: true,
     throttling: {
     
-      // rttMs: 150,
-      // throughputKbps: 1638.4,
-      // cpuSlowdownMultiplier: 4,
+      rttMs: 150,
+      throughputKbps: 1638.4,
+      cpuSlowdownMultiplier: 4,
 
-      rttMs: 40,
-      throughputKbps: 10 * 1024,
-      cpuSlowdownMultiplier: 1,
+      // rttMs: 40,
+      // throughputKbps: 10 * 1024,
+      // cpuSlowdownMultiplier: 1,
     },
     // Skip the h2 audit so it doesn't lie to us. See https://github.com/GoogleChrome/lighthouse/issues/6539
     // skipAudits: ['uses-http2'],

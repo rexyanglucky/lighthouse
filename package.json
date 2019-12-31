@@ -13,7 +13,12 @@
     "testlearn": "lighthouse --port=49435 --disable-storage-reset  --config-path=./desktop-config.js https://school.aijianzi.com/course-learn/#/video?lessonid=10293&chapterid=-1&courseid=914&p=1 --view",
     "test": "npm run testwww & npm run testcourse & npm run testlearn",
     "testsolution": "lighthouse --port=49435  --config-path=./desktop-config.js https://www.aijianzi.com/solution/ --view",
-    "login": "node test1.js"
+    "login": "node test1.js",
+    "testlogin": "lighthouse --port=49435  --config-path=./desktop-config.js https://school.aijianzi.com --view",
+    "testlogin135": "lighthouse --port=49435  --config-path=./desktop-config.js https://school135.aijianzi.com --view",
+    "testcourse135": "lighthouse --port=49435 --disable-storage-reset --config-path=./desktop-config.js https://school135.aijianzi.com/course-center/student/courses --view",
+    "testlearn135": "lighthouse --port=49435 --disable-storage-reset  --config-path=./desktop-config.js https://school135.aijianzi.com/course-learn/#/video?lessonid=10293&chapterid=-1&courseid=914&p=1 --view"
+
 
   },
   "repository": {
